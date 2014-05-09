@@ -7,7 +7,8 @@
     });
 
     module.controller('builderCtrl', function($scope) {
-        
+        $scope.list1 = {title: 'AngularJS - Drag Me'};
+        $scope.list2 = {};
     });
 
 })(angular.module('builder', []));
