@@ -1,9 +1,6 @@
 module = angular.module('app', [
-    'ngRoute', 'builder'
+    'ngRoute','mainDirectives','mainServices' ,'builder'
     ]);
-    
-module.controller('nowyCtrl', function($scope) {
-     $scope.imie = "michal";
-    });
+   
 
 

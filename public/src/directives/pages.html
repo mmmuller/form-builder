@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" ng-click="showDirective = !showDirective">Pages</div>
+    <div class="panel-body" ng-show="!showDirective">
+
+        <div class="row">
+            <div class="col-md-5">           
+                <table class="table">
+                    <thead>
+                    <td class="col-md-1"></td>
+                    <td class="col-md-2">Name</td>
+                    <td class="col-md-4">Description</td>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="page in pages">
+                            <td> 
+                                <a ng-click="orderService.moveUp(page, pages);" ng-show="!orderService.isFirst(page, pages);" class=" glyphicon glyphicon-arrow-up" />
+                                <a ng-click="orderService.moveDown(page, pages);" ng-show="!orderService.isLast(page, pages);" class=" glyphicon glyphicon-arrow-down" />
+                            </td>
+                            <td>{{page.name}}</td>
+                            <td>{{page.description}}</td>                          
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
