@@ -1,4 +1,2 @@
-/Form-builder/nbproject/private/
-/Form-builder/web/bower_components/
-/Form-builder/build/
-/Form-builder/dist/
+/public/bower_components/
+/node_modules/
